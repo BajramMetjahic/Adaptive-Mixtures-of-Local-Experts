@@ -17,4 +17,6 @@ The data used is my recreation of the data used by Jacobs et al. It had to be re
 
 I first tested on two standard backpropagation networks with one hidden layer, one with 4 hidden units, and another with 8, as was done in Jacobs et al.'s original paper, and then created my model, which consisted of 4 local experts, each with one hidden layer with 8 units. There were 4 networks so that hopefully one network could become an expert on each of the 4 aforementioned vowel classes. The categorical cross entropy loss function was used for all of the standard backpropagation networks and the 4 local experts due to the multi-class nature of the target values. I also believe that these loss functions represent an improvement over Jacobs et al's original implementation.
 
+I decided to use Tensorflow Keras in Python because implementing this kind of model in R was causing tons of problems with importing the proper packages, and crafting the specific model I wanted in R, with all of its proclivities, was taking much more time than it did to start over with Keras.
+
 Please feel free to reach out with any questions.
