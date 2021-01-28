@@ -1,4 +1,4 @@
-# Mixtures of Local Experts
+# Adaptive Mixtures of Local Experts
 
 This project is my own implementation of Jacobs et al.'s 1990 paper "Adaptive Mixtures of Local Experts". The goal of the original research paper was to define a supervised learning procedure where multiple separate neural networks (known as “expert networks”) learned to deal with different subsets of the training data.
 
